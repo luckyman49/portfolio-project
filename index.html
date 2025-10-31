@@ -2,25 +2,27 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ganiyu Lukman Akinniyi | Portfolio</title>
+
   <style>
     body {
-      font-family: 'Segoe UI', Arial, sans-serif;
-      background: url('https://images.unsplash.com/photo-1526378722440-6e0a5f48c0c5') no-repeat center center fixed;
-      background-size: cover;
-      color: #333;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      line-height: 1.6;
+      color: #333;
+      background-image: url('ajani.jpeg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
     }
 
     header {
-      background: rgba(0, 74, 173, 0.9);
+      background-color: rgba(0, 123, 255, 0.85);
       color: white;
       text-align: center;
-      padding: 40px 10px;
+      padding: 2rem 0;
     }
 
     header img {
@@ -28,101 +30,112 @@
       height: 150px;
       border-radius: 50%;
       border: 3px solid white;
-      margin-bottom: 15px;
-      transition: transform 0.3s ease;
+      margin-bottom: 1rem;
     }
 
-    header img:hover {
-      transform: scale(1.1);
+    nav {
+      background-color: rgba(0, 86, 179, 0.9);
+      text-align: center;
+      padding: 10px 0;
     }
 
-    h1 {
-      margin: 10px 0;
-      font-size: 2.2em;
-    }
-
-    section {
-      max-width: 900px;
-      background-color: rgba(255, 255, 255, 0.9);
-      margin: 30px auto;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s ease;
-    }
-
-    section:hover {
-      transform: scale(1.02);
-    }
-
-    h2 {
-      color: #004aad;
-      margin-top: 0;
-      border-bottom: 2px solid #004aad;
-      display: inline-block;
-      padding-bottom: 5px;
-    }
-
-    ul {
-      list-style-type: square;
-      padding-left: 20px;
-    }
-
-    a {
-      color: #004aad;
+    nav a {
+      color: white;
       text-decoration: none;
-      transition: color 0.3s;
+      margin: 0 15px;
+      font-weight: bold;
     }
 
-    a:hover {
-      color: #008cff;
+    nav a:hover {
       text-decoration: underline;
     }
 
+    section {
+      padding: 20px;
+      max-width: 800px;
+      margin: 20px auto;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #007bff;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .gallery img {
+      width: 200px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
     footer {
-      background-color: rgba(0, 74, 173, 0.9);
-      color: white;
       text-align: center;
-      padding: 15px;
-      margin-top: 20px;
+      background-color: rgba(0, 123, 255, 0.85);
+      color: white;
+      padding: 1rem;
+      margin-top: 40px;
     }
   </style>
 </head>
 
 <body>
   <header>
-    <img src="mypix.jpg" alt="Ganiyu Lukman Akinniyi">
+    <!-- my profile photo -->
+    <img src="portf.jpeg" alt="Ganiyu Lukman Akinniyi">
     <h1>Ganiyu Lukman Akinniyi</h1>
     <p>Aspiring Software Engineer | Front-End & Back-End Developer</p>
   </header>
 
-  <section>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
     <h2>About Me</h2>
     <p>
-      Hello! 👋 I’m <strong>Ganiyu Lukman Akinniyi</strong>, an aspiring software engineer passionate about creating
-      interactive, user-friendly, and modern web applications. My goal is to establish a strong IT foundation and grow
-      into a remote software engineer working globally.
+      Hello! I'm <strong>Ganiyu Lukman Akinniyi</strong>, an aspiring software engineer passionate about building
+      modern, user-friendly web applications.
+      My goal is to establish a strong IT foundation and secure a remote job as a full-stack developer.
+    </p>
+
+    <div class="gallery">
+      <img src="portf.jpeg" alt="My Photo">
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <p>
+      I'm currently working on front-end and back-end projects that help me grow my skills every day.
+      You can find my projects on
+      <a href="https://github.com/luckyman49" target="_blank">my GitHub profile</a>.
     </p>
   </section>
 
-  <section>
-    <h2>Goals</h2>
-    <ul>
-      <li>Establish a strong IT and software development foundation</li>
-      <li>Master front-end (HTML, CSS, JavaScript) and back-end (Node.js, MongoDB) technologies</li>
-      <li>Build real-world full-stack projects from scratch</li>
-      <li>Secure a remote job as a software engineer</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:your-email@example.com">lganiyu43@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/luckyman49" target="_blank">github.com/luckyman49</a></p>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:lganiyu43@gmail.com">lganiyu43@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/luckyman49" target="_blank">luckyman49</a></p>
   </section>
 
   <footer>
-    <p>© 2025 Ganiyu Lukman Akinniyi | All Rights Reserved</p>
+    <p>Visitor Count:</p>
+    <img src="https://profile-counter.glitch.me/luckyman49/count.svg" alt="Visitor Counter" />
+    <p>&copy; 2025 Ganiyu Lukman Akinniyi</p>
   </footer>
 </body>
 
